@@ -1,140 +1,163 @@
+body {
+    opacity: inherit;
+}
 
-			body {
-               background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
-               
-				margin:0px;
-				padding:0px;
-                flex-wrap: wrap;
-			}
-            .principal{
-                background-image: none;
-                display:block;
-                margin: 100px;
-            }
-        
-            h2{
-                background-image: none;
-                background-color:rgba(83, 83, 83, 0.13);
-                background
-                font-family:Arial, Helvetica, sans-serif;
-                font-size: 60px;
-                display: block;
-                margin: 70px;
-                text-align: center;
-                color:antiquewhite;
-            } 
-            .botonMasInfo {
-                background-image: none;
-                display: block;
-                font-style: inherit;
-            }
-            .botonMasInfo .sabermas {
-                width: 220px;
-                align-items:center ;
-                margin-left: 40%;
-                margin-top: 80px;
-            }
-			
-			#menu {
-                background-image: none;
-				margin:auto;
-				width:500px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			
-			ul, ol {
-                background-image: none;
-				list-style:none;
-			}
-			
-			.nav > li {
-                background-image: none;
-				float:left;
+.superimpose{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.superimposeCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(255, 255, 255);
+  background-color: rgba(255, 235, 205, 0.241);
+  
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:oblique;
+    font-size: 40px;
+}
+.contact {
+    width: 50%;
+    height: 5%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(255, 255, 255);
+  
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:oblique;
+    font-size: 20px;
+}
 
-			}
-			
-			.nav li a {
-                background-image: none;
-				background-color:#000;
-				color:#fff;
-				text-decoration:none;
-				padding:10px 25px;
-				display:block;
+.botonMasInfo {
+    background-image: none;
+    display: block;
+    font-style: inherit;
+}
 
-			}
-			
-			.nav li a:hover {
-                background-image: none;
-				background-color:#434343;
+.botonMasInfo .sabermas {
+    width: 220px;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 80px;
+}
 
-			}
-			
-			.nav li ul {
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			
-			.nav li:hover > ul {
-				display:block;
-			}
-			
-			.nav li ul li {
-				position:relative;
-			}
-			
-			.nav li ul li ul {
-				right:-140px;
-				top:0px;
-			}
-            h4{
-                padding: 60px;
-                font-size:40px ;
-                text-align: center;
-            }
-            .principal p{
-                border-style: ridge;
-                margin: 95px;;
-                padding-left: 90px;
-                
-                width: 550px;
-                display: block;
-                font: size 25px ;
-                font-size: 25px;
-                font-family: Arial, Helvetica, sans-serif;
-                color:rgba(255, 127, 80, 0.726)
-            }
-            img.fondo {
-                border-style: double;
-                border-color: rgba(255, 127, 80, 0.726);
-                width: 450px;
-                float: right;
-                align-content:space-around;
-                justify-items: center;
-                margin-right: 70px;
-            }
-            .contenido p{
-                border-style: ridge;
-                
-                padding-left: 90px;
-                
-                width: 550px;
-                display: block;
-                font: size 25px ;
-                font-size: 25px;
-                font-family: Arial, Helvetica, sans-serif;
-                color:rgba(255, 127, 80, 0.726)
-            }
-            img.foda {
-                border-style: double;
-                border-color: rgba(255, 127, 80, 0.726);
-                width: 450px;
-                float: right;
-                align-content:space-around;
-                justify-items: center;
-                margin-right: 70px;
-            }
+#menu {
+    background-image: none;
+    margin: auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-           
-			
-		
+ul,
+ol {
+    background-image: none;
+    list-style: none;
+}
+
+.nav>li {
+    background-image: none;
+    float: left;
+
+}
+
+.nav li a {
+    background-image: none;
+    background-color: rgba(255, 235, 205, 0.241);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+
+}
+
+.nav li a:hover {
+    background-image: none;
+    background-color: #434343;
+
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+h4 {
+    padding: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.principal p {
+    border-style: ridge;
+    margin: 95px;
+    ;
+    padding-left: 90px;
+
+    width: 550px;
+    display: block;
+    font: size 25px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 127, 80, 0.726)
+}
+
+img.fondo {
+    border-style: double;
+    border-color: rgba(255, 127, 80, 0.726);
+    width: 450px;
+    float: right;
+    align-content: space-around;
+    justify-items: center;
+    margin-right: 70px;
+}
+
+.contenido p {
+    border-style: ridge;
+
+    padding-left: 90px;
+
+    width: 550px;
+    display: block;
+    font: size 25px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 127, 80, 0.726)
+}
+
+img.foda {
+    border-style: double;
+    border-color: rgba(255, 127, 80, 0.726);
+    width: 450px;
+    float: right;
+    align-content: space-around;
+    justify-items: center;
+    margin-right: 70px;
+}
+
+
+
+.background {
+    opacity: 0.9;
+    width: 100%;
+}
