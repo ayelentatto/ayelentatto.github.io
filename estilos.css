@@ -1,13 +1,18 @@
+
 body {
+    
     opacity: inherit;
 }
 
 .superimpose{
+    width:100%;
     position: absolute;
     top: 10px;
     left: 10px;
+    margin-left: 7%;
 }
 .superimposeCenter{
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,7 +34,7 @@ body {
     left: 65%;
     color: antiquewhite;
     font-size: 20px;
-    font-:;
+    
     font-style: normal;
 }
 .contact {
@@ -53,8 +58,9 @@ body {
 #menu {
     background-image: none;
     margin: auto;
-    width: 500px;
+    width:100%;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 ul,
@@ -69,7 +75,20 @@ ol {
     
 justify-content:space-between;
 }
+.contactEmail{
+    border: 0cm;
+    background-image: none;
+    background-color: rgba(255, 235, 205, 0.13);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+}
+.contactEmail:hover{
+    background-image: none;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
 
+}
 .nav li a {
     background-image: none;
     background-color: rgba(255, 235, 205, 0.13);
@@ -109,7 +128,8 @@ justify-content:space-between;
 
 .background {
     opacity: 0.9;
-    width: 100%;
+    width:100%;
+    margin: 0%;
 }
 .col {
     display: inline-block;
@@ -126,3 +146,22 @@ justify-content:space-between;
 	animation: gradient 15s ease infinite;
 	
 }
+.title{
+    position: absolute;
+    margin-top: 5%;
+    left: 40%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    -webkit-background-clip: text;
+    color: transparent; 
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:oblique;
+    font-size: 40px;
+}
+
+
+#imgJaP{
+    margin-top: 15%;
+    width:min-content
+}
+
