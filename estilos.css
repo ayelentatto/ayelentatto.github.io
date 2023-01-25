@@ -1,56 +1,57 @@
-
 body {
-    width:fit-content;
+    background-image: linear-gradient(to bottom, rgb(0, 41, 41), #310314);
+    width: fit-content;
     opacity: inherit;
 }
 
-.superimpose{
-    width:100%;
+.superimpose {
+    width: 100%;
     position: absolute;
     top: 10px;
     left: 10px;
     margin-left: 7%;
+
 }
-.superimposeCenter{
-    
+
+
+
+.superimposeCenter {
+
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     -webkit-background-clip: text;
-    color: transparent;   
-    
-
-  
-    
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style:oblique;
-    font-size: 40px;
-}
-.name {
-    position: absolute;
-    top: 60%;
-    left: 65%;
-    color: antiquewhite;
+    color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
     font-size: 20px;
-    
-    font-style: normal;
 }
+
+.name {
+    position:fixed;
+    justify-content: flex-end;
+    top: 60%;
+    left: 50%;
+    color: antiquewhite;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}
+
 .contact {
-    width: 50%;
-    height: 5%;
+    width: 80%;
+    height: 3%;
     position: absolute;
-    top: 80%;
-    left: 60%;
+    top: 85%;
+    left: 55%;
     transform: translate(-50%, -50%);
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     -webkit-background-clip: text;
-    color: transparent; 
-  
-    
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style:oblique;
+    color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
     font-size: 20px;
 }
 
@@ -58,9 +59,8 @@ body {
 #menu {
     background-image: none;
     margin: auto;
-    width:100%;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 ul,
@@ -72,10 +72,11 @@ ol {
 .nav>li {
     display: inline-block;
     background-image: none;
-    
-justify-content:space-between;
+
+    justify-content: space-between;
 }
-.contactEmail{
+
+.contactEmail {
     border: 0cm;
     background-image: none;
     background-color: rgba(255, 235, 205, 0.13);
@@ -84,11 +85,12 @@ justify-content:space-between;
     padding: 10px 25px;
     display: block;
 }
-.contactEmail:hover{
+
+.contactEmail:hover {
     background-image: none;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
-
 }
+
 .nav li a {
     background-image: none;
     background-color: rgba(255, 235, 205, 0.13);
@@ -102,7 +104,6 @@ justify-content:space-between;
 .nav li a:hover {
     background-image: none;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
-
 }
 
 .nav li ul {
@@ -112,8 +113,7 @@ justify-content:space-between;
 }
 
 .nav li:hover>ul {
-    display:contents
-    
+    display: contents
 }
 
 .nav li ul li {
@@ -128,42 +128,204 @@ justify-content:space-between;
 
 .background {
     opacity: 0.9;
-    width:100%;
+    width: 100%;
     margin: 0%;
 }
+
 .col {
     display: inline-block;
 }
+
 .contact .ul .li {
-    display:inline;
-   justify-content:center;
+    display: inline;
+    justify-content: center;
     align-content: flex-end;
     width: 10%;
 }
-.btnSocial{
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	
-	animation: gradient 15s ease infinite;
-	
+
+.btnSocial {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+    animation: gradient 15s ease infinite;
+
 }
-.title{
+
+.title {
     position: absolute;
     margin-top: 5%;
     left: 40%;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     -webkit-background-clip: text;
-    color: transparent; 
+    color: transparent;
 
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style:oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
     font-size: 40px;
 }
 
 
-#imgJaP{
-    margin-top: 15%;
-    width:min-content
+@media (min-width:600px) {
+    .superimpose {
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        margin-left: 7%;
+
+    }
+
+    .superimposeCenter {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: oblique;
+        font-size: 40px;
+    }
+
+    .name {
+        position: absolute;
+        top: 60%;
+        left: 65%;
+        color: antiquewhite;
+        font-size: 20px;
+        font-style: normal;
+    }
+
+    .contact {
+        width: 50%;
+        height: 5%;
+        position: absolute;
+        top: 80%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: oblique;
+        font-size: 20px;
+    }
+
+    #menu {
+        background-image: none;
+        margin: auto;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    ul,
+    ol {
+        background-image: none;
+        list-style: none;
+    }
+
+    .nav>li {
+        display: inline-block;
+        background-image: none;
+
+        justify-content: space-between;
+    }
+
+    .contactEmail {
+        border: 0cm;
+        background-image: none;
+        background-color: rgba(255, 235, 205, 0.13);
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 25px;
+        display: block;
+    }
+
+    .contactEmail:hover {
+        background-image: none;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+    }
+
+    .nav li a {
+        background-image: none;
+        background-color: rgba(255, 235, 205, 0.13);
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 25px;
+        display: block;
+
+    }
+
+    .nav li a:hover {
+        background-image: none;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+    }
+
+    .nav li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+
+    .nav li:hover>ul {
+        display: contents
+    }
+
+    .nav li ul li {
+        position: relative;
+        height: max-content;
+    }
+
+    .nav li ul li ul {
+        right: -140px;
+        top: 0px;
+    }
+
+    .background {
+        opacity: 0.9;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .col {
+        display: inline-block;
+    }
+
+    .contact .ul .li {
+        display: inline;
+        justify-content: center;
+        align-content: flex-end;
+        width: 10%;
+    }
+
+    .btnSocial {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+        animation: gradient 15s ease infinite;
+
+    }
+
+    .title {
+        position: absolute;
+        margin-top: 5%;
+        left: 40%;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: oblique;
+        font-size: 40px;
+    }
 }
-.pageKnowledge{
+
+#imgJaP {
+    margin-top: 15%;
+    width: min-content
+}
+
+.pageKnowledge {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
