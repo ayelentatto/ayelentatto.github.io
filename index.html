@@ -21,72 +21,65 @@
 </head>
 
 <body>
-    <nav class="  navbar-dark p-1">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-        <div class="">
-            <img id="backg" class="background" src="./background1.jpg">
-            <div class="superimpose navbar-collapse">
-                <ul class="nav navbar-nav w-100 ">
-                    <li  class="nav-item"><a href="index.html">Main</a></li>
-                    <li  class="nav-item"><a href="./knowledge.html" target="_blank">Knowledge</a></li>
-                    <li  class="nav-item"><a href="">Projects</a>
-                        <ul  class="navbar-nav w-100 ">
-                            <li  class="nav-item"><a href="https://ayelentatto.github.io/Plan-Ceibal-e-commerce-JAP/"
-                                    target="_blank">Project e-commerce - Jóvenes a Programar</a></li>
-                            <li class="nav-item"><a href="https://yaoming16.github.io/Entrega-7-Grupal-JaP/" target="_blank">CRUD - Group project collaboration </a></li>
-                            <li class="nav-item"><a href="https://ayelentatto.github.io/inventory-control/">Inventory control - Group project collaboration </a></li>
-                            
-                        </ul>
-                    </li>
+    <!-- La barra principal en mvile, se ve perfectamente hasta 490px-->
+    <div class=" container d-flex justify-content-center">
+        <ul class="nav barMain">
+            <li class="float-right"><a class="" href="index.html">Main</a></li>
+            <li class="float-right"><a class="" href="./knowledge.html" >About me</a></li>
+            <li class="float-right"><a class="" href="">Portfolio</a>
+            </li>
+        </ul>
 
 
-                </ul>
-            </div>
-            <div class="superimposeCenter">
-                <p>FULLSTACK DEVELOPER</p>
-                <p class="name">Ayelén Tatto</p>
+    </div>
 
-            </div>
-            <div class="contact">
-                <ul class="nav">
-                    <li class="row">
-                        <div><a class="btnSocial" href="https://www.linkedin.com/in/ayelen-tatto32905/" target="_blank">
-                                <i class="fa-brands fa-linkedin float-right"></i></a> </div>
-                    </li>
-                    <li class="row">
-                        <div><a class="btnSocial" href="https://github.com/ayelentatto" target="_blank"><i
-                                    class="fab fa-github-square float-right"></i></a></div>
-                    </li>
-                    <li class="row">
-                        <div><button type="button" class="contactEmail" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="fa-duotone fa-at float-right "></i>
-                            </button></div>
-                    </li>
-                    <li class="row">
-                        <div><a class="btnSocial" href="https://walink.co/258200" target="_blank"><i
-                                    class="fa-brands fa-whatsapp-square float-right"></i></a>
-                        </div>
-                    </li>
+    <div class="groupMain d-flex justify-content-center">
+        <img id="backg" class="background" src="./background1.jpg">
+    </div>
+    <div class="superimposeCenter">
+        <p>FULLSTACK DEVELOPER</p>
+        <p class="name">Ayelén Tatto</p>
 
-                </ul>
-            </div>
-        </div>
+    </div>
+
+    <div class="contact d-flex justify-content-center">
+        <ul class="nav">
+            <li class="row">
+                <div><a class="btnSocial" href="https://www.linkedin.com/in/ayelen-tatto32905/" target="_blank">
+                        <i class="fa-brands fa-linkedin float-right"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="row">
+                <div><a class="btnSocial" href="https://github.com/ayelentatto" target="_blank">
+                    <i class="fab fa-github-square float-right"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="row">
+                <div><button type="button" class="contactEmail" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-duotone fa-at float-right "></i>
+                    </button></div>
+            </li>
+            <li class="row">
+                <div><a class="btnSocial" href="https://walink.co/258200" target="_blank"><i
+                            class="fa-brands fa-whatsapp-square float-right"></i></a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    </div>
 
 
 
 
     </div>
-   
-    
+
+
     <!-- agregar trancisiones de imagenes, pueden ser cartas con imagenes con enlaces-->
 
-   
+
     <!-- Modal emil -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

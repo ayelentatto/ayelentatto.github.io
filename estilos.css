@@ -4,21 +4,12 @@ body {
     opacity: inherit;
 }
 
-.superimpose {
-    width: 100%;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    margin-left: 7%;
-
-}
-
-
 
 .superimposeCenter {
 
     position: absolute;
-    top: 20%;
+    width: 330px;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -26,26 +17,26 @@ body {
     color: transparent;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .name {
-    position:fixed;
+    position: fixed;
     justify-content: flex-end;
-    top: 60%;
-    left: 50%;
+    top: 65%;
+    left: 48%;
     color: antiquewhite;
-    font-size: 15px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-   
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .contact {
     width: 80%;
     height: 3%;
     position: absolute;
-    top: 85%;
-    left: 55%;
+    top: 92%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     -webkit-background-clip: text;
@@ -165,19 +156,36 @@ ol {
 
 
 @media (min-width:600px) {
-    .superimpose {
+    .background {
+        opacity: 0.9;
         width: 100%;
-        position: absolute;
+        margin:auto;
+        display: block;
+        padding: auto;
+        padding-left: 325px;
+
+    }
+
+    .groupMain{
+
+        padding-top: 0%;
+        
+    }
+   
+    .barMain {
+        width: 100%;
         top: 10px;
-        left: 10px;
-        margin-left: 7%;
+        left: 50%;
+        margin-left: 43%;
+       
 
     }
 
     .superimposeCenter {
-
+        width: 60%;
         position: absolute;
-        top: 50%;
+        padding-left: 10%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -185,24 +193,26 @@ ol {
         color: transparent;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-style: oblique;
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .name {
         position: absolute;
-        top: 60%;
-        left: 65%;
+        top: 65%;
+        left: 45%;
         color: antiquewhite;
-        font-size: 20px;
+        font-size: 30px;
         font-style: normal;
+        padding-left: 10%;
     }
 
     .contact {
+        justify-content: center;
         width: 50%;
         height: 5%;
         position: absolute;
         top: 80%;
-        left: 60%;
+        left: 50%;
         transform: translate(-50%, -50%);
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         -webkit-background-clip: text;
@@ -283,12 +293,7 @@ ol {
         top: 0px;
     }
 
-    .background {
-        opacity: 0.9;
-        width: 100%;
-        margin: 0%;
-    }
-
+   
     .col {
         display: inline-block;
     }
@@ -319,13 +324,10 @@ ol {
         font-style: oblique;
         font-size: 40px;
     }
+
 }
 
-#imgJaP {
-    margin-top: 15%;
-    width: min-content
-}
-
-.pageKnowledge {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+.barMain {
+    height: 20%;
+    font-size: 180%
 }
