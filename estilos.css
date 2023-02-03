@@ -180,7 +180,11 @@ ol {
        
 
     }
-
+.barPortfolio{
+    width: 50%;
+    justify-content: center;
+    display: inline-flex;
+}
     .superimposeCenter {
         width: 60%;
         position: absolute;
@@ -312,7 +316,7 @@ ol {
 
     }
 
-    .title {
+    .btnes :first-child {
         position: absolute;
         margin-top: 5%;
         left: 40%;
@@ -322,7 +326,26 @@ ol {
 
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-style: oblique;
-        font-size: 40px;
+        font-size: 10px;
+    }
+
+.aboutMe{
+    background-color: #1a0009;
+    color: darkgray;
+    font-family:cursive;
+}
+    .photo{
+       float: inline-start;
+        width: 45%;
+        top: 10%;
+        left: 5%;
+
+        
+        background-color: #310314;
+        padding-top: 5%;
+        padding-left: 100px;
+        margin-left: 10%;
+        
     }
 
 }
