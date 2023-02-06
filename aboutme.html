@@ -23,19 +23,18 @@
     <!-- La barra principal en mvile, se ve perfectamente hasta 490px-->
     <div class=" container d-flex justify-content-center">
         <ul class="nav barMain">
-            <li class="float-right"><a class="" href="index.html">Main</a></li>
-            <li class="float-right"><a class="" href="./aboutme.html">About me</a></li>
-            <li class="float-right"><a class="" href="./portfolio.html">Portfolio</a>
+            <li class="float-right btnsMain"><a class="center " href="index.html">Main</a></li>
+            <li class="float-right btnsMain"><a class="center" href="./aboutme.html">About me</a></li>
+            <li class="float-right btnsMain"><a class="center" href="./portfolio.html">Portfolio</a>
             </li>
         </ul>
     </div>
 
-    <div class="container ">
+    <div class="container todo">
         <div class="row">
             <div class="col-sm
-            photo">
-                <img src="./img/fotoAye7-removebg-preview.png" class="rounded-circle" alt="..." width="300px"
-                    height="350px">
+            photo columna1">
+                <img id="myPhoto" src="./img/fotoAye7-removebg-preview.png" class="rounded-circle" alt="..." >
             </div>
             <div class="aboutMe  col-sm"> I am Ayelén, I am 22 years old, I live in Uruguay, I am very curious, I like
                 to
@@ -47,21 +46,22 @@
                 software
                 developer certificate.
                 I want to join a team, contribute my knowledge to it, and continue learning and growing.
+                <div class="curriculum"><a
+                    href="https://www.canva.com/design/DAFXZZEUSYc/KNfKSKC2GG24xTU0nF2ISw/view?utm_content=DAFXZZEUSYc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+                    <button type="button" class="btn btn-dark">View
+                        resume (curriculum)</button> </a></div>
 
-                <a
-                    href="https://www.canva.com/design/DAFXZZEUSYc/KNfKSKC2GG24xTU0nF2ISw/view?utm_content=DAFXZZEUSYc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">View
-                    resume (curriculum)</a>
             </div>
-            <div class="col-sm">
+            <div class="col-sm columna3">
                 <div class="courses">
-                    <h2 style="color: #2BDB6C;">Courses</h2>
+                    <h2 id="titleCourses" class="subtituloAboutme" style="color: #2BDB6C;">Courses</h2>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-info" id="JaP1">
-                        Jóvenes A Programar
+                    <button type="button" class="btn btn-outline-info btnCoursess" id="JaP1">
+                        Jóvenes A Programar - Desarrollo Web
                     </button>
 
-                    <button type="button" class="btn btn-outline-info" id="IBM" data-bs-toggle="modal"
-                        data-bs-target="#ibmModal">IBM - Full-Stack Software Developer.
+                    <button type="button" class="btn btn-outline-info btnInfoPlus btnCoursess" id="IBM"
+                        data-bs-toggle="modal" data-bs-target="#ibmModal">IBM - Full-Stack Software Developer.
                     </button>
                     <!-- Modal ibm -->
                     <div class="modal fade" id="ibmModal" tabindex="-1" aria-labelledby="ibmModalLabel"
@@ -116,9 +116,10 @@
 
 
 
+
                 </div>
-                <div class="skill">
-                    <h2 style="color: #FF8AF9;">Skills</h2>
+                <div class="container justify-content-center">
+                    <h2 class="subtituloAboutme" style="color: #FF8AF9;">Skills</h2>
 
                     <div class="progress">
                         <div class="progress-bar" style="width:90%; background-color: #7C55D9;">
@@ -143,8 +144,8 @@
 
                 </div>
                 <div class="ingles">
-                    <h2 style="color: blueviolet;">English</h2>
-                    <div class="progress">
+                    <h2 class="subtituloAboutme titleEnglish" style="color: blueviolet;">English</h2>
+                    <div class="progress rateEnglish">
                         <div class="progress-bar" style="width:65%; background-color: #0b8500;">
                             <span class="progress-bar-text">Low intermediate </span>
                         </div>
@@ -164,6 +165,7 @@
             class="fa-brands fa-bootstrap"></i><i class="fa-duotone fa-clouds"></i><i class="fa-solid fa-database"></i>
     </footer>
     <script src="./script.js"></script>
+    <script src="./aboutme.js"></script>
 
 </body>
 

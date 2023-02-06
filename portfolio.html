@@ -21,11 +21,11 @@
 
 <body>
     <!-- La barra principal en mvile, se ve perfectamente hasta 490px-->
-    <div class=" container d-flex justify-content-center">
+    <div class=" container-xxl justify-content-center">
         <ul class="nav barMain">
-            <li class="float-right"><a class="" href="index.html">Main</a></li>
-            <li class="float-right"><a class="" href="./aboutme.html">About me</a></li>
-            <li class="float-right"><a class="" href="./portfolio.html">Portfolio</a>
+            <li class="float-right btnsMain"><a class="center " href="index.html">Main</a></li>
+            <li class="float-right btnsMain"><a class="center" href="./aboutme.html">About me</a></li>
+            <li class="float-right btnsMain"><a class="center" href="./portfolio.html">Portfolio</a>
             </li>
         </ul>
     </div>
@@ -33,34 +33,34 @@
     <div class="d-flex justify-content-center">
 
 
-        <div class="container-xxl ">
+        <div class="container">
             <div class="row">
                 <div class="col" style="color:darkgrey;">
                     <div class="chooseProj">Choose a project to view:
-                        <button type="button" class="btn btn-outline-info" id="project1" onclick="showProject()">project e-Commerce</button>
-                        <button type="button" class="btn btn-outline-info" id="project2">project CRUD</button>
-                        <button type="button" class="btn btn-outline-info" id="project3">project Inventory</button>
+                        <button type="button" class="btn btn-outline-info" id="project1" class="center  btnsMain"
+                            onclick="showProject()">project e-Commerce</button>
+                        <button type="button" class="btn btn-outline-info" id="project2" class="center  btnsMain"
+                            onclick="showProject()">project CRUD</button>
+                        <button type="button" class="btn btn-outline-info" id="project3" class="center  btnsMain"
+                            onclick="showProject()">project Inventory</button>
                     </div>
                     <div class="codeAndPage">
-                        <div id="PyC1" class="d-none">
-                            <button type="button" id="page1">Test page</button>
-                            <button type="button" id="code1">See the code</button>
+                        <div id="PyC1" class=" option-1 d-none">
+                            <button type="button" class="btn-secondary" id="page1">Test page</button>
                         </div>
-                        <div id="PyC2" class="d-none">
-                            <button type="button" id="page2">Test page</button>
-                            <button type="button" id="code2">See the code</button>
+                        <div id="PyC2" class="option-2 d-none">
+                            <button type="button" class="btn-secondary" id="page2">Test page</button>
                         </div>
-                        <div id="PyC3" class="d-none">
-                            <button type="button" id="page3">Test page</button>
-                            <button type="button" id="code3">See the code</button>
+                        <div id="PyC3" class="option-3 d-none">
+                            <button type="button" class="btn-secondary" id="page3">Test page</button>
                         </div>
                     </div>
 
 
                 </div>
-                <div class="col-6" id="carousels" style="width:60%;">
+                <div class="col-6" id="carousels">
 
-                    <div id="screenS-default" class="carousel slide" data-bs-ride="carousel">
+                    <div id="screenS-default" class="carousel slide " data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./img/screenshots/capturaEcommerce1.png" class="d-block w-100" alt="...">
@@ -84,7 +84,7 @@
                         </button>
                     </div>
 
-                    <div id="screenS-ecommerce" class="carousel slide d-none" data-bs-ride="carousel">
+                    <div id="screenS-ecommerce" class="carousel slide d-none option-1" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./img/screenshots/capturaEcommerce1.png" class="d-block w-100" alt="...">
@@ -124,7 +124,7 @@
                         </button>
                     </div>
 
-                    <div id="screenS-crud" class="carousel slide d-none" data-bs-ride="carousel">
+                    <div id="screenS-crud" class="carousel slide d-none option-2" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./img/screenshots/crud1.png" class="d-block w-100" alt="...">
@@ -162,7 +162,7 @@
                         </button>
                     </div>
 
-                    <div id="screenS-inventory" class="carousel slide d-none" data-bs-ride="carousel">
+                    <div id="screenS-inventory" class="carousel slide d-none option-3" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./img/screenshots/ct1.png" class="d-block w-100" alt="...">
@@ -184,51 +184,51 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-3 description " style="color: rgb(194, 149, 216);">
+                <div class="col description " style="color: rgb(194, 149, 216);">
                     <div class="default" id="des-default">
                         There are currently 3 projects available.
                         Select one for more information.
                     </div>
-                    <div id="des-ecommerce" class="d-none">
+                    <div id="des-ecommerce" class=" option-1 d-none">
                         <h2>About this project:</h2>
-                        <h4>Proyecto ficticio de e-commerce realizado en el curso de "Jóvenes a Programar" en 2022</h4>
-                        <h6>Validacion de datos</h6>
-                        <h6>Productos:</h6>
-                        <p> -filtros de productos según categoria y precio
-                            -lista según orden alfabetico
-                            -comentarios y recomendaciones de compradores,
-                            -agregar al carrito.</p>
+                        <h4>Fictional e-commerce project carried out in the "Youth to Program" course in 2022</h4>
+                        <h6>Data validation
+                        </h6>
+                        <h6>Products:</h6>
+                        <p> -Product filters according to category and price.</p>
+                        <p>-List in alphabetical order.</p>
+                        <p>-Comments and recommendations from buyers,
+                            -add to cart.</p>
 
 
-                        <p>.Carrito: -precios por cantidad
-                            -precios subtotales
-                            -metodo de pago y de envio
-                            -costo total de compra</p>
-                        <p>.Usuario:
-                            -almacenamiento de datos de usuario
-                            foto de perfil
-                            -modificacion de datos de usuario</p>
+                        <h6>Cart:</h6>
+                        <p>-Quantity cost </p>
+                        <p>-Subtotal cost</p>
+                        <p>-Payment and shipping method</p>
+                        <p>-Total cost of purchase</p>
+                        <h6>User</h6>
+                        <p>-User data storage</p>
+                        <p>-Profile picture</p>
+                        <p>-Modification of user data</p>
 
                     </div>
-                    <div id="des-crud" class="d-none">
-                        <p>El concepto CRUD está estrechamente vinculado a la gestión de datos digitales.
-                            CRUD hace referencia a un acrónimo en el que se reúnen las primeras letras de las cuatro
-                            operaciones
-                            fundamentales de aplicaciones persistentes en sistemas de bases de datos:</p>
-
-                        <p>Create (Crear registros)
-                            Read bzw. Retrieve (Leer registros)
-                            Update (Actualizar registros)
-                            Delete bzw. Destroy (Borrar registros)</p>
-                        <p>En pocas palabras, CRUD resume las funciones requeridas por un usuario para crear y gestionar
-                            datos.</p>
+                    <div id="des-crud" class="option-2 d-none">
+                        <p>The CRUD concept is closely linked to digital data management.
+                            CRUD refers to an acronym in which the first letters of the four
+                            operations
+                            fundamentals of persistent applications in database systems:</p>
+                        <p>Create (Create registers)
+                            Read bzw. Retrieve (read registers)
+                            Update (Update registrers)
+                            Delete bzw. Destroy (Delete registrers)</p>
+                        <p>In a few words, CRUD summarizes the functions required by a user to create and manage data.</p>
                     </div>
-                    <div id="des-inventory" class="d-none">
-                        <p> Proyecto ficticio de sistema que permite realizar una gestión de las existencias de un
-                            almacén, tanto en la
-                            entrada como en la permanencia o la salida.
-                            El objetivo final es la optimización de los costes y conseguir que el uso de las existencias
-                            sea el mejor.</p>
+                    <div id="des-inventory" class="option-3 d-none">
+                        <p> Fictitious project of a system that allows to carry out a management of the stocks of a
+                            warehouse, both in
+                            entry as in permanence or exit.
+                            The ultimate goal is to optimize costs and ensure that the use of stocks
+                            be the best.</p>
 
                     </div>
                 </div>
@@ -239,6 +239,7 @@
 
 
         <script src="./script.js"></script>
+        <script src="./portfolio.js"></script>
 
 </body>
 
