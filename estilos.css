@@ -1,14 +1,34 @@
 body {
-    background-image: linear-gradient(to bottom, rgb(0, 41, 41), #310314);
-    width: fit-content;
+    background-image: linear-gradient(to bottom, #310314, rgb(0, 41, 41));
     opacity: inherit;
 }
 
+.barMain {
+    width: 250px;
+    height: 20%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10%;
+    margin-top: 0%;
+}
+
+.btnsMain {
+    width: 230px;
+    justify-content: center
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    padding: 50px;
+}
 
 .superimposeCenter {
-
+    margin-top: 35%;
     position: absolute;
-    width: 330px;
+    width: 235px;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -17,25 +37,25 @@ body {
     color: transparent;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .name {
     position: fixed;
     justify-content: flex-end;
-    top: 65%;
+    top: 50%;
     left: 48%;
     color: antiquewhite;
-    font-size: 25px;
+    font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
 .contact {
-    width: 80%;
+    width: 100%;
     height: 3%;
     position: absolute;
-    top: 92%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -43,7 +63,8 @@ body {
     color: transparent;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
-    font-size: 20px;
+    font-size: 13px;
+    justify-content: center;
 }
 
 
@@ -218,66 +239,46 @@ ol {
     font-size: 40px;
 }
 
+#myPhoto {
+    width: 240px;
+    height: 240px;
+    margin: 0%;
+}
+
 
 @media (min-width:600px) {
     .background {
         opacity: 0.9;
-        width: 100%;
-        margin:auto;
-        display: block;
+        width: 70%;
+        margin: auto;
         padding: auto;
-        padding-left: 325px;
-
     }
 
-    .groupMain{
 
-        padding-top: 0%;
-        
-    }
-   
+
     .barMain {
-        width: 100%;
+        width: 800px;
         top: 10px;
-        left: 50%;
-        margin-left: 43%;
-       
+        left: 10%;
+        margin-left: 20%;
+        display: inline-block;
+        align-items: center;
 
-    }
-.barPortfolio{
-    width: 50%;
-    justify-content: center;
-    display: inline-flex;
-}
-    .superimposeCenter {
-        width: 60%;
-        position: absolute;
-        padding-left: 10%;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-style: oblique;
-        font-size: 60px;
     }
 
     .name {
         position: absolute;
-        top: 65%;
-        left: 45%;
+        top: 60%;
+        left: 60%;
         color: antiquewhite;
-        font-size: 30px;
-        font-style: normal;
-        padding-left: 10%;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
     }
 
     .contact {
-        justify-content: center;
-        width: 50%;
-        height: 5%;
+        width: 100%;
+        height: 3%;
         position: absolute;
         top: 80%;
         left: 50%;
@@ -291,94 +292,25 @@ ol {
         justify-content: center;
     }
 
-    #menu {
-        background-image: none;
-        margin: auto;
-        width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-
-    ul,
-    ol {
-        background-image: none;
-        list-style: none;
-    }
-
-    .nav>li {
-        display: inline-block;
-        background-image: none;
-
-        justify-content: space-between;
-    }
-
-    .contactEmail {
-        border: 0cm;
-        background-image: none;
-        background-color: rgba(255, 235, 205, 0.13);
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 25px;
-        display: block;
-    }
-
-    .contactEmail:hover {
-        background-image: none;
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
-    }
-
-    .nav li a {
-        background-image: none;
-        background-color: rgba(255, 235, 205, 0.13);
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 25px;
-        display: block;
-
-    }
-
-    .nav li a:hover {
-        background-image: none;
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
-    }
-
-    .nav li ul {
-        display: none;
-        position: absolute;
-        min-width: 140px;
-    }
-
-    .nav li:hover>ul {
-        display: contents
-    }
-
-    .nav li ul li {
-        position: relative;
-        height: max-content;
-    }
-
-    .nav li ul li ul {
-        right: -140px;
-        top: 0px;
-    }
-
-   
-    .col {
-        display: inline-block;
-    }
-
-    .contact .ul .li {
-        display: inline;
+    .barPortfolio {
+        width: 50%;
         justify-content: center;
-        align-content: flex-end;
-        width: 10%;
+        display: inline-flex;
     }
 
-    .btnSocial {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    .groupMain {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
 
-        animation: gradient 15s ease infinite;
-
+    .superimposeCenter {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 500px;
+        margin-top: 8%;
+        font-size: 50px;
     }
 
     .btnes :first-child {
@@ -394,23 +326,22 @@ ol {
         font-size: 10px;
     }
 
-.aboutMe{
-    background-color: #1a0009;
-    color: darkgray;
-    font-family:cursive;
-}
-    .photo{
-       float: inline-start;
-        width: 45%;
-        top: 10%;
-        left: 5%;
+    .todo {
+        width: 80%;
+    }
 
-        
+    .aboutMe {
+        background-color: #1a0009;
+        color: darkgray;
+        font-family: cursive;
+        width: 30%;
+        padding: 10%;
+    }
+
+    .photo {
+        width: 65%;
+        top: 10%;
         background-color: #310314;
-        padding-top: 5%;
-        padding-left: 100px;
-        margin-left: 10%;
-        
     }
 
     .columna1,
@@ -485,9 +416,4 @@ ol {
     .tools {
         margin-left: 2%;
     }
-}
-
-.barMain {
-    height: 20%;
-    font-size: 180%
 }
