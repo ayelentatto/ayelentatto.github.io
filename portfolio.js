@@ -20,6 +20,7 @@ const btnPage1 = document.getElementById("page1");
 const btnPage2 = document.getElementById("page2");
 const btnPage3 = document.getElementById("page3");
 
+
 btnPage1.addEventListener('click', () => {
     abrirNuevoTab("https://ayelentatto.github.io/Plan-Ceibal-e-commerce-JAP/")
 });

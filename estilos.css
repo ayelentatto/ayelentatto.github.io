@@ -126,7 +126,7 @@ body {
     margin-bottom: 0%;
 }
 
-.rateEnglish {}
+
 
 #carousels {
     width: 100%;
@@ -288,7 +288,7 @@ ol {
         color: transparent;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-style: oblique;
-        font-size: 13px;
+        font-size: 20px;
         justify-content: center;
     }
 
@@ -351,7 +351,10 @@ ol {
         width: 30%;
         display: inline-block;
     }
-
+    .columna3{
+        background-color: #0f0003;
+        padding-top: 7%;
+    }
     #myPhoto {
         width: 300px;
         height: 300px;
@@ -360,9 +363,57 @@ ol {
     }
 
     .curriculum {
-        margin-top: 10%;
+        margin-top: 30%;
+        justify-content: center;
+        display: flex
     }
+
+    .viewCV {
+        background-color: #ca7387; /* Color de fondo base */
+        color: #500000; /* Color de texto */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px; /* Borde redondeado */
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.2); /* Sombra */
+        transition: all 0.3s ease; /* Transición de los cambios */
+        cursor: pointer;
+      }
+      
+      .viewCV:hover {
+        background-color: #c2a2b1; /* Color de fondo al pasar el mouse */
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+      }
+      
     #carousels {
         width: 90%;
+    }
+
+    .logs {
+        margin: 0px;
+        padding: 0%;
+        margin-top: 30%;
+        justify-content: space-between;
+        margin-right: 5%;
+    }
+
+    .iconss {
+        display: inline-block;
+        justify-content: space-between;
+    }
+
+    .iconss h4 {
+        color:rgb(212, 69, 98)
+    }
+
+    .frontend {
+        margin-left: 2%;
+    }
+
+    .backend {
+        margin-left: 2%;
+    }
+
+    .tools {
+        margin-left: 2%;
     }
 }
