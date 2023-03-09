@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./flickity/flickity.min.css">
+    <script src="./flickity/flickity.pkgd.min.js"></script>
+
     <script src="https://kit.fontawesome.com/04f2796d15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos.css">
     <script src="https://kit.fontawesome.com/04f2796d15.js" crossorigin="anonymous"></script>
@@ -20,8 +22,8 @@
 </head>
 
 <body>
-     <!-- La barra principal en mvile, se ve perfectamente hasta 490px-->
-     <div class=" container d-flex justify-content-center">
+    <!-- La barra principal en mvile, se ve perfectamente hasta 490px-->
+    <div class=" container d-flex justify-content-center">
         <ul class="nav barMain">
             <li class="float-right btnsMain"><a class="center " href="index.html">Main</a></li>
             <li class="float-right btnsMain"><a class="center" href="./aboutme.html">About me</a></li>
@@ -30,215 +32,32 @@
         </ul>
     </div>
 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" id="cards">
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+
     <div class="d-flex justify-content-center">
+        <div id="cards">
 
-
-        <div class="container-xxl ">
-            <div class="row">
-                <div class="col" style="color:darkgrey;">
-                    <div class="chooseProj">Choose a project to view:
-                        <button type="button" class="btn btn-outline-info" id="project1" onclick="showProject()">project e-Commerce</button>
-                        <button type="button" class="btn btn-outline-info" id="project2">project CRUD</button>
-                        <button type="button" class="btn btn-outline-info" id="project3">project Inventory</button>
-                    </div>
-                    <div class="codeAndPage">
-                        <div id="PyC1" class="d-none">
-                            <button type="button" id="page1">Test page</button>
-                            <button type="button" id="code1">See the code</button>
-                        </div>
-                        <div id="PyC2" class="d-none">
-                            <button type="button" id="page2">Test page</button>
-                            <button type="button" id="code2">See the code</button>
-                        </div>
-                        <div id="PyC3" class="d-none">
-                            <button type="button" id="page3">Test page</button>
-                            <button type="button" id="code3">See the code</button>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-6" id="carousels" style="width:60%;">
-
-                    <div id="screenS-default" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/screenshots/capturaEcommerce1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/crud1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/ct1.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#screenS-default"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#screenS-default"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-
-                    <div id="screenS-ecommerce" class="carousel slide d-none" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/screenshots/capturaEcommerce1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/capturaEcommerce2.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/capturaEcommerce3.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/capturaEcommerce5.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/capturaEcommerce6.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/capturaEcommerce7.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/capturaEcommerce8.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/capturaEcommerce9.png" class="d-block w-100" alt="...">
-                            </div>
-
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#screenS-ecommerce"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#screenS-ecommerce"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-
-                    <div id="screenS-crud" class="carousel slide d-none" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/screenshots/crud1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/crud2.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/crud3.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/crud 4.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/crud5.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/crud6.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/crud7.png" class="d-block w-100" alt="...">
-                            </div>
-
-
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#screenS-crud"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#screenS-crud"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-
-                    <div id="screenS-inventory" class="carousel slide d-none" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/screenshots/ct1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/screenshots/ct2.png" class="d-block w-100" alt="...">
-                            </div>
-
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#screenS-inventory"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#screenS-inventory"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-3 description " style="color: rgb(194, 149, 216);">
-                    <div class="default" id="des-default">
-                        There are currently 3 projects available.
-                        Select one for more information.
-                    </div>
-                    <div id="des-ecommerce" class="d-none">
-                        <h2>About this project:</h2>
-                        <h4>Proyecto ficticio de e-commerce realizado en el curso de "Jóvenes a Programar" en 2022</h4>
-                        <h6>Validacion de datos</h6>
-                        <h6>Productos:</h6>
-                        <p> -filtros de productos según categoria y precio
-                            -lista según orden alfabetico
-                            -comentarios y recomendaciones de compradores,
-                            -agregar al carrito.</p>
-
-
-                        <p>.Carrito: -precios por cantidad
-                            -precios subtotales
-                            -metodo de pago y de envio
-                            -costo total de compra</p>
-                        <p>.Usuario:
-                            -almacenamiento de datos de usuario
-                            foto de perfil
-                            -modificacion de datos de usuario</p>
-
-                    </div>
-                    <div id="des-crud" class="d-none">
-                        <p>El concepto CRUD está estrechamente vinculado a la gestión de datos digitales.
-                            CRUD hace referencia a un acrónimo en el que se reúnen las primeras letras de las cuatro
-                            operaciones
-                            fundamentales de aplicaciones persistentes en sistemas de bases de datos:</p>
-
-                        <p>Create (Crear registros)
-                            Read bzw. Retrieve (Leer registros)
-                            Update (Actualizar registros)
-                            Delete bzw. Destroy (Borrar registros)</p>
-                        <p>En pocas palabras, CRUD resume las funciones requeridas por un usuario para crear y gestionar
-                            datos.</p>
-                    </div>
-                    <div id="des-inventory" class="d-none">
-                        <p> Proyecto ficticio de sistema que permite realizar una gestión de las existencias de un
-                            almacén, tanto en la
-                            entrada como en la permanencia o la salida.
-                            El objetivo final es la optimización de los costes y conseguir que el uso de las existencias
-                            sea el mejor.</p>
-
-                    </div>
-                </div>
-            </div>
         </div>
 
 
+    </div>
 
 
-        <script src="./script.js"></script>
+
+
+    <script src="./script.js"></script>
 
 </body>
 

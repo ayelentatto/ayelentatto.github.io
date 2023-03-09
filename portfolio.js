@@ -21,14 +21,15 @@ const btnPage2 = document.getElementById("page2");
 const btnPage3 = document.getElementById("page3");
 
 
+
 btnPage1.addEventListener('click', () => {
-    abrirNuevoTab("https://ayelentatto.github.io/Plan-Ceibal-e-commerce-JAP/")
+  abrirNuevoTab("https://ayelentatto.github.io/Plan-Ceibal-e-commerce-JAP/")
 });
 btnPage2.addEventListener('click', () => {
-    abrirNuevoTab("https://yaoming16.github.io/Entrega-7-Grupal-JaP/")
+  abrirNuevoTab("https://yaoming16.github.io/Entrega-7-Grupal-JaP/")
 });
 btnPage3.addEventListener('click', () => {
-    abrirNuevoTab("https://ayelentatto.github.io/inventory-control/")
+  abrirNuevoTab("https://ayelentatto.github.io/inventory-control/")
 });
 
 const carouselDefault = document.getElementById("screenS-default");
@@ -43,264 +44,267 @@ console.log(arr1);
 
 const showProject = () => {
 
-    btnProject1.addEventListener("click", () => {
-      number = 1;
-      console.log(number)
-      switch (number) {
-        case 1:
-          carouselDefault.classList.add("d-none");
-          descriptionDefault.classList.add("d-none");
-          pageYcode1.classList.remove("d-none");
-          pageYcode1.classList.add("d-inline-Block");
-          carousel1.classList.remove("d-none");
-          carousel1.classList.add("d-inline-Block");
-          description1.classList.remove("d-none");
-          description1.classList.add("d-inline-Block");// code block
-  
-          pageYcode2.classList.add("d-none");
-          pageYcode2.classList.remove("d-inline-Block");
-          carousel2.classList.add("d-none");
-          carousel2.classList.remove("d-inline-Block");
-          description2.classList.add("d-none");
-          description2.classList.remove("d-inline-Block");
-  
-          pageYcode3.classList.add("d-none");
-          pageYcode3.classList.remove("d-inline-Block");
-          carousel3.classList.add("d-none");
-          carousel3.classList.remove("d-inline-Block");
-          description3.classList.add("d-none");
-          description3.classList.remove("d-inline-Block");
-          console.log("ecommerce");
-          break;
-        case 2:
-          carouselDefault.classList.add("d-none");
-          descriptionDefault.classList.add("d-none");
-  
-          pageYcode2.classList.remove("d-none");
-          pageYcode2.classList.add("d-inline-Block");
-          carousel2.classList.remove("d-none");
-          carousel2.classList.add("d-inline-Block");
-          description2.classList.remove("d-none");
-          description2.classList.add("d-inline-Block");
-          
-          pageYcode1.classList.add("d-none");
-          pageYcode1.classList.remove("d-inline-Block");
-          carousel1.classList.add("d-none");
-          carousel1.classList.remove("d-inline-Block");
-          description1.classList.add("d-none");
-          description1.classList.remove("d-inline-Block");
-  
-          pageYcode3.classList.add("d-none");
-          pageYcode3.classList.remove("d-inline-Block");
-          carousel3.classList.add("d-none");
-          carousel3.classList.remove("d-inline-Block");
-          description3.classList.add("d-none");
-          description3.classList.remove("d-inline-Block");
-          // code block
-          console.log("crud")
-          break;
-        case 3: carouselDefault.classList.add("d-none");
+  btnProject1.addEventListener("click", () => {
+    number = 1;
+    console.log(number)
+    switch (number) {
+      case 1:
+        carouselDefault.classList.add("d-none");
         descriptionDefault.classList.add("d-none");
-  
-          pageYcode3.classList.remove("d-none");
-          pageYcode3.classList.add("d-inline-Block");
-          carousel3.classList.remove("d-none");
-          carousel3.classList.add("d-inline-Block");
-          description3.classList.remove("d-none");
-          description3.classList.add("d-inline-Block");
-  
-          pageYcode1.classList.add("d-none");
-          pageYcode1.classList.remove("d-inline-Block");
-          carousel1.classList.add("d-none");
-          carousel1.classList.remove("d-inline-Block");
-          description1.classList.add("d-none");
-          description1.classList.remove("d-inline-Block");
-  
-          pageYcode2.classList.add("d-none");
-          pageYcode2.classList.remove("d-inline-Block");
-          carousel2.classList.add("d-none");
-          carousel2.classList.remove("d-inline-Block");
-          description2.classList.add("d-none");
-          description2.classList.remove("d-inline-Block");
-  
-          console.log("inventory")
-          break;
-        default:
-          console.log("no seleccionado") // code block
-      }
-    });
-    btnProject2.addEventListener("click", () => {
-      number = 2;
-      console.log(number);
-      switch (number) {
-        case 1:
-          carouselDefault.classList.add("d-none");
-          descriptionDefault.classList.add("d-none");
-          pageYcode1.classList.remove("d-none");
-          pageYcode1.classList.add("d-inline-Block");
-          carousel1.classList.remove("d-none");
-          carousel1.classList.add("d-inline-Block");
-          description1.classList.remove("d-none");
-          description1.classList.add("d-inline-Block");// code block
-  
-          pageYcode2.classList.add("d-none");
-          pageYcode2.classList.remove("d-inline-Block");
-          carousel2.classList.add("d-none");
-          carousel2.classList.remove("d-inline-Block");
-          description2.classList.add("d-none");
-          description2.classList.remove("d-inline-Block");
-  
-          pageYcode3.classList.add("d-none");
-          pageYcode3.classList.remove("d-inline-Block");
-          carousel3.classList.add("d-none");
-          carousel3.classList.remove("d-inline-Block");
-          description3.classList.add("d-none");
-          description3.classList.remove("d-inline-Block");
-          console.log("ecommerce");
-          break;
-        case 2:
-          carouselDefault.classList.add("d-none");
-          descriptionDefault.classList.add("d-none");
-  
-          pageYcode2.classList.remove("d-none");
-          pageYcode2.classList.add("d-inline-Block");
-          carousel2.classList.remove("d-none");
-          carousel2.classList.add("d-inline-Block");
-          description2.classList.remove("d-none");
-          description2.classList.add("d-inline-Block");
-          
-          pageYcode1.classList.add("d-none");
-          pageYcode1.classList.remove("d-inline-Block");
-          carousel1.classList.add("d-none");
-          carousel1.classList.remove("d-inline-Block");
-          description1.classList.add("d-none");
-          description1.classList.remove("d-inline-Block");
-  
-          pageYcode3.classList.add("d-none");
-          pageYcode3.classList.remove("d-inline-Block");
-          carousel3.classList.add("d-none");
-          carousel3.classList.remove("d-inline-Block");
-          description3.classList.add("d-none");
-          description3.classList.remove("d-inline-Block");
-          // code block
-          console.log("crud")
-          break;
-        case 3: carouselDefault.classList.add("d-none");
+        pageYcode1.classList.remove("d-none");
+        pageYcode1.classList.add("d-inline-Block");
+        carousel1.classList.remove("d-none");
+        carousel1.classList.add("d-inline-Block");
+        description1.classList.remove("d-none");
+        description1.classList.add("d-inline-Block");// code block
+
+        pageYcode2.classList.add("d-none");
+        pageYcode2.classList.remove("d-inline-Block");
+        carousel2.classList.add("d-none");
+        carousel2.classList.remove("d-inline-Block");
+        description2.classList.add("d-none");
+        description2.classList.remove("d-inline-Block");
+
+        pageYcode3.classList.add("d-none");
+        pageYcode3.classList.remove("d-inline-Block");
+        carousel3.classList.add("d-none");
+        carousel3.classList.remove("d-inline-Block");
+        description3.classList.add("d-none");
+        description3.classList.remove("d-inline-Block");
+        console.log("ecommerce");
+        break;
+      case 2:
+        carouselDefault.classList.add("d-none");
         descriptionDefault.classList.add("d-none");
-  
-          pageYcode3.classList.remove("d-none");
-          pageYcode3.classList.add("d-inline-Block");
-          carousel3.classList.remove("d-none");
-          carousel3.classList.add("d-inline-Block");
-          description3.classList.remove("d-none");
-          description3.classList.add("d-inline-Block");
-  
-          pageYcode1.classList.add("d-none");
-          pageYcode1.classList.remove("d-inline-Block");
-          carousel1.classList.add("d-none");
-          carousel1.classList.remove("d-inline-Block");
-          description1.classList.add("d-none");
-          description1.classList.remove("d-inline-Block");
-  
-          pageYcode2.classList.add("d-none");
-          pageYcode2.classList.remove("d-inline-Block");
-          carousel2.classList.add("d-none");
-          carousel2.classList.remove("d-inline-Block");
-          description2.classList.add("d-none");
-          description2.classList.remove("d-inline-Block");
-          
-          console.log("inventory")
-          break;
-        default:
-          console.log("no seleccionado") // code block
-      }
-  
-    });
-    btnProject3.addEventListener("click", () => {
-      number = 3;
-      console.log(number)
-      switch (number) {
-        case 1:
-          carouselDefault.classList.add("d-none");
-          descriptionDefault.classList.add("d-none");
-          pageYcode1.classList.remove("d-none");
-          pageYcode1.classList.add("d-inline-Block");
-          carousel1.classList.remove("d-none");
-          carousel1.classList.add("d-inline-Block");
-          description1.classList.remove("d-none");
-          description1.classList.add("d-inline-Block");// code block
-  
-          pageYcode2.classList.add("d-none");
-          pageYcode2.classList.remove("d-inline-Block");
-          carousel2.classList.add("d-none");
-          carousel2.classList.remove("d-inline-Block");
-          description2.classList.add("d-none");
-          description2.classList.remove("d-inline-Block");
-  
-          pageYcode3.classList.add("d-none");
-          pageYcode3.classList.remove("d-inline-Block");
-          carousel3.classList.add("d-none");
-          carousel3.classList.remove("d-inline-Block");
-          description3.classList.add("d-none");
-          description3.classList.remove("d-inline-Block");
-          console.log("ecommerce");
-          break;
-        case 2:
-          carouselDefault.classList.add("d-none");
-          descriptionDefault.classList.add("d-none");
-  
-          pageYcode2.classList.remove("d-none");
-          pageYcode2.classList.add("d-inline-Block");
-          carousel2.classList.remove("d-none");
-          carousel2.classList.add("d-inline-Block");
-          description2.classList.remove("d-none");
-          description2.classList.add("d-inline-Block");
-          
-          pageYcode1.classList.add("d-none");
-          pageYcode1.classList.remove("d-inline-Block");
-          carousel1.classList.add("d-none");
-          carousel1.classList.remove("d-inline-Block");
-          description1.classList.add("d-none");
-          description1.classList.remove("d-inline-Block");
-  
-          pageYcode3.classList.add("d-none");
-          pageYcode3.classList.remove("d-inline-Block");
-          carousel3.classList.add("d-none");
-          carousel3.classList.remove("d-inline-Block");
-          description3.classList.add("d-none");
-          description3.classList.remove("d-inline-Block");
-          // code block
-          console.log("crud")
-          break;
-        case 3: carouselDefault.classList.add("d-none");
+
+        pageYcode2.classList.remove("d-none");
+        pageYcode2.classList.add("d-inline-Block");
+        carousel2.classList.remove("d-none");
+        carousel2.classList.add("d-inline-Block");
+        description2.classList.remove("d-none");
+        description2.classList.add("d-inline-Block");
+
+        pageYcode1.classList.add("d-none");
+        pageYcode1.classList.remove("d-inline-Block");
+        carousel1.classList.add("d-none");
+        carousel1.classList.remove("d-inline-Block");
+        description1.classList.add("d-none");
+        description1.classList.remove("d-inline-Block");
+
+        pageYcode3.classList.add("d-none");
+        pageYcode3.classList.remove("d-inline-Block");
+        carousel3.classList.add("d-none");
+        carousel3.classList.remove("d-inline-Block");
+        description3.classList.add("d-none");
+        description3.classList.remove("d-inline-Block");
+        // code block
+        console.log("crud")
+        break;
+      case 3: carouselDefault.classList.add("d-none");
         descriptionDefault.classList.add("d-none");
-  
-          pageYcode3.classList.remove("d-none");
-          pageYcode3.classList.add("d-inline-Block");
-          carousel3.classList.remove("d-none");
-          carousel3.classList.add("d-inline-Block");
-          description3.classList.remove("d-none");
-          description3.classList.add("d-inline-Block");
-  
-          pageYcode1.classList.add("d-none");
-          pageYcode1.classList.remove("d-inline-Block");
-          carousel1.classList.add("d-none");
-          carousel1.classList.remove("d-inline-Block");
-          description1.classList.add("d-none");
-          description1.classList.remove("d-inline-Block");
-  
-          pageYcode2.classList.add("d-none");
-          pageYcode2.classList.remove("d-inline-Block");
-          carousel2.classList.add("d-none");
-          carousel2.classList.remove("d-inline-Block");
-          description2.classList.add("d-none");
-          description2.classList.remove("d-inline-Block");
-          
-          console.log("inventory")
-          break;
-        default:
-          console.log("no seleccionado") // code block
-      }
-    })
-  
-  }
+
+        pageYcode3.classList.remove("d-none");
+        pageYcode3.classList.add("d-inline-Block");
+        carousel3.classList.remove("d-none");
+        carousel3.classList.add("d-inline-Block");
+        description3.classList.remove("d-none");
+        description3.classList.add("d-inline-Block");
+
+        pageYcode1.classList.add("d-none");
+        pageYcode1.classList.remove("d-inline-Block");
+        carousel1.classList.add("d-none");
+        carousel1.classList.remove("d-inline-Block");
+        description1.classList.add("d-none");
+        description1.classList.remove("d-inline-Block");
+
+        pageYcode2.classList.add("d-none");
+        pageYcode2.classList.remove("d-inline-Block");
+        carousel2.classList.add("d-none");
+        carousel2.classList.remove("d-inline-Block");
+        description2.classList.add("d-none");
+        description2.classList.remove("d-inline-Block");
+
+        console.log("inventory")
+        break;
+      default:
+        console.log("no seleccionado") // code block
+    }
+  });
+  btnProject2.addEventListener("click", () => {
+    number = 2;
+    console.log(number);
+    switch (number) {
+      case 1:
+        carouselDefault.classList.add("d-none");
+        descriptionDefault.classList.add("d-none");
+        pageYcode1.classList.remove("d-none");
+        pageYcode1.classList.add("d-inline-Block");
+        carousel1.classList.remove("d-none");
+        carousel1.classList.add("d-inline-Block");
+        description1.classList.remove("d-none");
+        description1.classList.add("d-inline-Block");// code block
+
+        pageYcode2.classList.add("d-none");
+        pageYcode2.classList.remove("d-inline-Block");
+        carousel2.classList.add("d-none");
+        carousel2.classList.remove("d-inline-Block");
+        description2.classList.add("d-none");
+        description2.classList.remove("d-inline-Block");
+
+        pageYcode3.classList.add("d-none");
+        pageYcode3.classList.remove("d-inline-Block");
+        carousel3.classList.add("d-none");
+        carousel3.classList.remove("d-inline-Block");
+        description3.classList.add("d-none");
+        description3.classList.remove("d-inline-Block");
+        console.log("ecommerce");
+        break;
+      case 2:
+        carouselDefault.classList.add("d-none");
+        descriptionDefault.classList.add("d-none");
+
+        pageYcode2.classList.remove("d-none");
+        pageYcode2.classList.add("d-inline-Block");
+        carousel2.classList.remove("d-none");
+        carousel2.classList.add("d-inline-Block");
+        description2.classList.remove("d-none");
+        description2.classList.add("d-inline-Block");
+
+        pageYcode1.classList.add("d-none");
+        pageYcode1.classList.remove("d-inline-Block");
+        carousel1.classList.add("d-none");
+        carousel1.classList.remove("d-inline-Block");
+        description1.classList.add("d-none");
+        description1.classList.remove("d-inline-Block");
+
+        pageYcode3.classList.add("d-none");
+        pageYcode3.classList.remove("d-inline-Block");
+        carousel3.classList.add("d-none");
+        carousel3.classList.remove("d-inline-Block");
+        description3.classList.add("d-none");
+        description3.classList.remove("d-inline-Block");
+        // code block
+        console.log("crud")
+        break;
+      case 3: carouselDefault.classList.add("d-none");
+        descriptionDefault.classList.add("d-none");
+
+        pageYcode3.classList.remove("d-none");
+        pageYcode3.classList.add("d-inline-Block");
+        carousel3.classList.remove("d-none");
+        carousel3.classList.add("d-inline-Block");
+        description3.classList.remove("d-none");
+        description3.classList.add("d-inline-Block");
+
+        pageYcode1.classList.add("d-none");
+        pageYcode1.classList.remove("d-inline-Block");
+        carousel1.classList.add("d-none");
+        carousel1.classList.remove("d-inline-Block");
+        description1.classList.add("d-none");
+        description1.classList.remove("d-inline-Block");
+
+        pageYcode2.classList.add("d-none");
+        pageYcode2.classList.remove("d-inline-Block");
+        carousel2.classList.add("d-none");
+        carousel2.classList.remove("d-inline-Block");
+        description2.classList.add("d-none");
+        description2.classList.remove("d-inline-Block");
+
+        console.log("inventory")
+        break;
+      default:
+        console.log("no seleccionado") // code block
+    }
+
+  });
+  btnProject3.addEventListener("click", () => {
+    number = 3;
+    console.log(number)
+    switch (number) {
+      case 1:
+        carouselDefault.classList.add("d-none");
+        descriptionDefault.classList.add("d-none");
+        pageYcode1.classList.remove("d-none");
+        pageYcode1.classList.add("d-inline-Block");
+        carousel1.classList.remove("d-none");
+        carousel1.classList.add("d-inline-Block");
+        description1.classList.remove("d-none");
+        description1.classList.add("d-inline-Block");// code block
+
+        pageYcode2.classList.add("d-none");
+        pageYcode2.classList.remove("d-inline-Block");
+        carousel2.classList.add("d-none");
+        carousel2.classList.remove("d-inline-Block");
+        description2.classList.add("d-none");
+        description2.classList.remove("d-inline-Block");
+
+        pageYcode3.classList.add("d-none");
+        pageYcode3.classList.remove("d-inline-Block");
+        carousel3.classList.add("d-none");
+        carousel3.classList.remove("d-inline-Block");
+        description3.classList.add("d-none");
+        description3.classList.remove("d-inline-Block");
+        console.log("ecommerce");
+        break;
+      case 2:
+        carouselDefault.classList.add("d-none");
+        descriptionDefault.classList.add("d-none");
+
+        pageYcode2.classList.remove("d-none");
+        pageYcode2.classList.add("d-inline-Block");
+        carousel2.classList.remove("d-none");
+        carousel2.classList.add("d-inline-Block");
+        description2.classList.remove("d-none");
+        description2.classList.add("d-inline-Block");
+
+        pageYcode1.classList.add("d-none");
+        pageYcode1.classList.remove("d-inline-Block");
+        carousel1.classList.add("d-none");
+        carousel1.classList.remove("d-inline-Block");
+        description1.classList.add("d-none");
+        description1.classList.remove("d-inline-Block");
+
+        pageYcode3.classList.add("d-none");
+        pageYcode3.classList.remove("d-inline-Block");
+        carousel3.classList.add("d-none");
+        carousel3.classList.remove("d-inline-Block");
+        description3.classList.add("d-none");
+        description3.classList.remove("d-inline-Block");
+        // code block
+        console.log("crud")
+        break;
+      case 3: carouselDefault.classList.add("d-none");
+        descriptionDefault.classList.add("d-none");
+
+        pageYcode3.classList.remove("d-none");
+        pageYcode3.classList.add("d-inline-Block");
+        carousel3.classList.remove("d-none");
+        carousel3.classList.add("d-inline-Block");
+        description3.classList.remove("d-none");
+        description3.classList.add("d-inline-Block");
+
+        pageYcode1.classList.add("d-none");
+        pageYcode1.classList.remove("d-inline-Block");
+        carousel1.classList.add("d-none");
+        carousel1.classList.remove("d-inline-Block");
+        description1.classList.add("d-none");
+        description1.classList.remove("d-inline-Block");
+
+        pageYcode2.classList.add("d-none");
+        pageYcode2.classList.remove("d-inline-Block");
+        carousel2.classList.add("d-none");
+        carousel2.classList.remove("d-inline-Block");
+        description2.classList.add("d-none");
+        description2.classList.remove("d-inline-Block");
+
+        console.log("inventory")
+        break;
+      default:
+        console.log("no seleccionado") // code block
+    }
+  })
+
+}
+
+
+
