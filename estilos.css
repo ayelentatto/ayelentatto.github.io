@@ -244,8 +244,23 @@ ol {
     height: 240px;
     margin: 0%;
 }
-
-
+.frontedTechonologies img{
+padding: 10%;
+}
+.backendTechnologies{
+    margin: 0%;
+}
+.backendTitle{
+margin-top: 40%;
+color: darkslateblue;
+}
+.tools{
+    color: #c2a2b1;
+    
+}
+.toolsTitle{
+margin-top: 40%;
+}
 @media (min-width:600px) {
     .background {
         opacity: 0.9;
@@ -351,10 +366,12 @@ ol {
         width: 30%;
         display: inline-block;
     }
-    .columna3{
+
+    .columna3 {
         background-color: #0f0003;
         padding-top: 7%;
     }
+
     #myPhoto {
         width: 300px;
         height: 300px;
@@ -369,21 +386,28 @@ ol {
     }
 
     .viewCV {
-        background-color: #ca7387; /* Color de fondo base */
-        color: #500000; /* Color de texto */
+        background-color: #ca7387;
+        /* Color de fondo base */
+        color: #500000;
+        /* Color de texto */
         border: none;
         padding: 10px 20px;
-        border-radius: 20px; /* Borde redondeado */
-        box-shadow: 0px 8px 20px rgba(0,0,0,0.2); /* Sombra */
-        transition: all 0.3s ease; /* Transición de los cambios */
+        border-radius: 20px;
+        /* Borde redondeado */
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        /* Sombra */
+        transition: all 0.3s ease;
+        /* Transición de los cambios */
         cursor: pointer;
-      }
-      
-      .viewCV:hover {
-        background-color: #c2a2b1; /* Color de fondo al pasar el mouse */
-        box-shadow: 0px 10px 30px rgba(0,0,0,0.3); /* Sombra más pronunciada */
-      }
-      
+    }
+
+    .viewCV:hover {
+        background-color: #c2a2b1;
+        /* Color de fondo al pasar el mouse */
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+        /* Sombra más pronunciada */
+    }
+
     #carousels {
         width: 90%;
     }
@@ -402,7 +426,7 @@ ol {
     }
 
     .iconss h4 {
-        color:rgb(212, 69, 98)
+        color: rgb(212, 69, 98)
     }
 
     .frontend {
@@ -415,5 +439,20 @@ ol {
 
     .tools {
         margin-left: 2%;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 10%;
+        min-height: ;
+    }
+
+    #projects{
+        margin-top: 35px;
     }
 }

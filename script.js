@@ -1,5 +1,3 @@
-
-
 let projects = [
   {
     "img": './img/screenshots/capturaEcommerce1.png',
@@ -23,35 +21,46 @@ let projects = [
     "url":'https://ayelentatto.github.io/inventory-control/'
   }
 ];
-var $carousel = $('.carousel').flickity({
-  // opciones de Flickity
-});
 
 function createCards(projects) {
-  function CreateCards(projects) {
-    let cardsHtml = ''; // variable para almacenar el HTML de las tarjetas
-  
-    // crea el HTML de cada tarjeta y lo agrega a la variable cardsHtml
-    for (let project of projects) {
-      cardsHtml += '<div class="carousel-item">' +
-                   '<img src="'+ project.img +'" class="d-block w-100" alt="...">' +
-                   '<div class="carousel-caption d-none d-md-block">' +
-                   '<h5>'+ project.title +'</h5>' +
-                   '<p>'+ project.description +'</p>' +
-                   '<a href="'+ project.url +'" class="btn btn-primary" target="_blank">Ir al proyecto</a>' +
-                   '</div>' +
-                   '</div>';
-    }
-  
-    // agrega las tarjetas al contenedor del carousel
-    document.getElementById('cards').innerHTML = cardsHtml;
+  const cardsContainer = document.querySelector('.cards-container');  
+  for (let project of projects) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.width = '18rem';
+    card.style.margin = '20px';
+    card.style.display = 'inline-block';
+    card.style.verticalAlign = 'top';
+    
+    const cardImg = document.createElement('img');
+    cardImg.src = project.img;
+    cardImg.className = 'card-img-top';
+    cardImg.style.width = '100%';
+    cardImg.alt = '...';
+    card.appendChild(cardImg);
+    
+    const cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
+    card.appendChild(cardBody);
+    
+    const cardTitle = document.createElement('h5');
+    cardTitle.className = 'card-title';
+    cardTitle.textContent = project.title;
+    cardBody.appendChild(cardTitle);
+    
+    const cardDescription = document.createElement('p');
+    cardDescription.className = 'card-text';
+    cardDescription.textContent = project.description;
+    cardBody.appendChild(cardDescription);
+    
+    const cardLink = document.createElement('a');
+    cardLink.href = project.url;
+    cardLink.className = 'btn btn-primary';
+    cardLink.textContent = 'Go somewhere';
+    cardBody.appendChild(cardLink);
+    
+    cardsContainer.appendChild(card);
   }
-  
 }
-$('#myCarousel').carousel({
-  interval: 3000, // tiempo en milisegundos entre cada transición de tarjetas
-  pause: 'hover' // pausa la transición al pasar el mouse sobre el carousel
-});
 
 createCards(projects);
-
